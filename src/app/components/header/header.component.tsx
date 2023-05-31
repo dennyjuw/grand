@@ -27,10 +27,18 @@ const Header: React.FC = () => {
       </div>
       <nav>
         <ul className="flex flex-row">
-          <li>Special</li>
-          <li>Category 1</li>
-          <li>Category 2</li>
-          <li>Category 3</li>
+          <li>
+            <Link href="/browse/special">Special</Link>
+          </li>
+          <li>
+            <Link href="/browse/category-1">Category 1</Link>
+          </li>
+          <li>
+            <Link href="/browse/category-2">Category 2</Link>
+          </li>
+          <li>
+            <Link href="/browse/category-3">Category 3</Link>
+          </li>
         </ul>
       </nav>
     </header>
