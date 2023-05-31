@@ -30,7 +30,7 @@ const Header: React.FC = () => {
       <nav>
         <ul className="flex flex-row">
           <li>
-            <Link href="/browse/special">Special</Link>
+            <Link href="/browse/specials">Specials</Link>
           </li>
           <li>
             <Link href="/browse/category-1">Category 1</Link>
