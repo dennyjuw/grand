@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './home.module.scss';
-import Container from '@/app/components/container/container.component';
-import Highlight from '@/app/components/highlight/highlight.component';
+import Container from '@/components/container/container.component';
+import Highlight from '@/components/highlight/highlight.component';
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
-import Container from '@/app/components/container/container.component';
-import ProductTile from '@/app/components/product/product-tile/product-tile.component';
+import Container from '@/components/container/container.component';
+import ProductTile from '@/components/product/product-tile/product-tile.component';
 
 export default async function Search({
   searchParams,

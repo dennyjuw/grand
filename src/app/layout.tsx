@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/index.scss';
-import Header from './components/header/header.component';
-import Footer from './components/footer/footer.component';
+import '@/styles/index.scss';
+import Header from '@/components/header/header.component';
+import Footer from '@/components/footer/footer.component';
 
 export const metadata = {
   title: 'Grand',

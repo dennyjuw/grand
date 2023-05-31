@@ -1,7 +1,7 @@
-import Breadcrumb from '@/app/components/breadcrumb/breadcrumb.component';
-import CategoryTile from '@/app/components/category/category-tile/category-tile.component';
-import Container from '@/app/components/container/container.component';
-import ProductTile from '@/app/components/product/product-tile/product-tile.component';
+import Breadcrumb from '@/components/breadcrumb/breadcrumb.component';
+import CategoryTile from '@/components/category/category-tile/category-tile.component';
+import Container from '@/components/container/container.component';
+import ProductTile from '@/components/product/product-tile/product-tile.component';
 
 export default async function BrowseCategoryPage({
   params,
