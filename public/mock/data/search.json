@@ -3,21 +3,27 @@
   "result": [
     {
       "id": 123,
-      "name": "test product a",
-      "imageUrl": "",
-      "description": "description"
+      "title": "test product a",
+      "imageUrl": "/mock/img/product-img.jpg",
+      "description": "description",
+      "price": 1.5,
+      "unit": "each"
     },
     {
       "id": 481,
-      "name": "test product b",
-      "imageUrl": "",
-      "description": "description"
+      "title": "test product b",
+      "imageUrl": "/mock/img/product-img.jpg",
+      "description": "description",
+      "price": 2,
+      "unit": "each"
     },
     {
       "id": 524,
-      "name": "test product c",
-      "imageUrl": "",
-      "description": "description"
+      "title": "test product c",
+      "imageUrl": "/mock/img/product-img.jpg",
+      "description": "description",
+      "price": 2.99,
+      "unit": "each"
     }
   ]
 }

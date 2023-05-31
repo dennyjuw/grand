@@ -24,7 +24,10 @@ export default async function Search({
         <h1>Search for {term}</h1>
 
         <Container>
-          {result && result.map((_: any, i: number) => <ProductTile key={i} />)}
+          {result &&
+            result.map((res: any, i: number) => (
+              <ProductTile key={i} {...res} />
+            ))}
         </Container>
       </>
     );

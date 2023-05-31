@@ -1,1 +1,62 @@
-{}
+{
+  "id": 1,
+  "categoryName": "Category 1",
+  "result": [
+    {
+      "id": 123,
+      "title": "test product a",
+      "imageUrl": "/mock/img/product-img.jpg",
+      "description": "description",
+      "price": 1.5,
+      "unit": "each"
+    },
+    {
+      "id": 481,
+      "title": "test product b",
+      "imageUrl": "/mock/img/product-img.jpg",
+      "description": "description",
+      "price": 2,
+      "unit": "each"
+    },
+    {
+      "id": 524,
+      "title": "test product c",
+      "imageUrl": "/mock/img/product-img.jpg",
+      "description": "description",
+      "price": 2.99,
+      "unit": "each"
+    },
+    {
+      "id": 222,
+      "title": "test product d",
+      "imageUrl": "/mock/img/product-img.jpg",
+      "description": "description",
+      "price": 2,
+      "unit": "each"
+    },
+    {
+      "id": 125,
+      "title": "test product e",
+      "imageUrl": "/mock/img/product-img.jpg",
+      "description": "description",
+      "price": 2.99,
+      "unit": "each"
+    },
+    {
+      "id": 632,
+      "title": "test product f",
+      "imageUrl": "/mock/img/product-img.jpg",
+      "description": "description",
+      "price": 2,
+      "unit": "each"
+    },
+    {
+      "id": 801,
+      "title": "test product g",
+      "imageUrl": "/mock/img/product-img.jpg",
+      "description": "description",
+      "price": 2.99,
+      "unit": "each"
+    }
+  ]
+}
