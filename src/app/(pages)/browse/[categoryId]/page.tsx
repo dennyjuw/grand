@@ -11,13 +11,13 @@ export default async function BrowseCategoryPage({
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
   const data = await getData(params.categoryId);
-  const { result } = data;
+  const { categoryName, result } = data;
 
   return (
     <>
       <Breadcrumb />
 
-      <h1>{params.categoryId}</h1>
+      <h1>{categoryName}</h1>
 
       <Container>
         <CategoryTile />
@@ -35,7 +35,7 @@ export default async function BrowseCategoryPage({
 
 async function getData(categoryId: string) {
   const res = await fetch(
-    `http://localhost:3000/mock/data/category.json?id=${categoryId}`
+    `http://localhost:3000/mock/data/${categoryId}.json?id=${categoryId}`
   );
 
   // Recommendation: handle errors

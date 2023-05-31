@@ -1,11 +1,14 @@
 // @import './normalize.scss';
 
 @import './scaffold';
-@import './color';
+@import './colors';
+@import './fonts';
 
 @import './input';
 @import './layout';
 @import './link';
+@import './typography';
 
 // utilities
-@import './utils//display.scss';
+@import './utils/align';
+@import './utils/display';

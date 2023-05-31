@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import CartButton from '../cart-button/cart-button.component';
 import styles from './product-tile.component.module.scss';
 
 const ProductTile: React.FC = (props: any) => {
@@ -31,7 +32,9 @@ const ProductTile: React.FC = (props: any) => {
           ${price}/{unit}
         </div>
 
-        <button className="button">Add to cart</button>
+        <div className="text-center">
+          <CartButton />
+        </div>
       </div>
     </div>
   );
