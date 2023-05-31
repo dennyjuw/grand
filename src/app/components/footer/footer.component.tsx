@@ -8,9 +8,7 @@ const Footer: React.FC = () => {
       <div className="flex flex-row flex-space-between">
         <ul>
           <li>
-            <a href="" className={styles['green']}>
-              link 1
-            </a>
+            <a href="">link 1</a>
           </li>
           <li>
             <a href="">link 1</a>
@@ -65,7 +63,7 @@ const Footer: React.FC = () => {
           </li>
         </ul>
       </div>
-      <div>copyright</div>
+      <div className={styles['copyright']}>&copy; copyright</div>
     </footer>
   );
 };

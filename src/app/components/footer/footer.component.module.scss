@@ -1,10 +1,13 @@
 .footer {
   border-top: solid #ccc 1px;
   box-shadow: #eee 0px -10px 12px;
-  padding: 16px;
+  padding: 1rem;
   width: 100%;
-}
 
-.green {
-  color: green;
+  .copyright {
+    background: #ccc;
+    font-size: 0.875rem;
+    margin: 1rem -1rem 0 -1rem;
+    padding: 0.5rem 1rem;
+  }
 }

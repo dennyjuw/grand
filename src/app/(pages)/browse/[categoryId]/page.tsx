@@ -10,8 +10,14 @@ export default function BrowseCategoryPage({
 }) {
   return (
     <>
-      <h1>Browse category - {params.categoryId}</h1>
+      <h1>{params.categoryId}</h1>
       <ProductTileContainer>
+        <ProductTile />
+        <ProductTile />
+        <ProductTile />
+        <ProductTile />
+        <ProductTile />
+        <ProductTile />
         <ProductTile />
       </ProductTileContainer>
     </>
