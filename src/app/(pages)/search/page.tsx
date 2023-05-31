@@ -1,12 +1,10 @@
-// import type { GetServerSideProps } from 'next';
-
 import Container from '@/app/components/container/container.component';
 import ProductTile from '@/app/components/product/product-tile/product-tile.component';
 
-export default function Search({
+export default async function Search({
   searchParams,
 }: {
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: { [key: string]: string | undefined };
 }) {
   const { term } = searchParams;
 
@@ -17,31 +15,32 @@ export default function Search({
         <div>Please enter search term</div>
       </>
     );
+  } else {
+    const data = await getData(term);
+    const { result } = data;
+
+    return (
+      <>
+        <h1>Search for {term}</h1>
+
+        <Container>
+          {result && result.map((_: any, i: number) => <ProductTile key={i} />)}
+        </Container>
+      </>
+    );
   }
-
-  return (
-    <>
-      <h1>Search for {term}</h1>
-
-      <Container>
-        <ProductTile />
-        <ProductTile />
-        <ProductTile />
-        <ProductTile />
-        <ProductTile />
-        <ProductTile />
-        <ProductTile />
-      </Container>
-    </>
-  );
 }
 
-// export const getServerSideProps: GetServerSideProps = async ({
-//   req,
-//   query,
-// }) => {
-//   console.log(req, query);
-//   const res = await fetch('https://api.github.com/repos/vercel/next.js');
-//   const repo = await res.json();
-//   return { props: { repo } };
-// };
+async function getData(term: string) {
+  const res = await fetch(
+    `http://localhost:3000/mock/data/search.json?term=${term}`
+  );
+
+  // Recommendation: handle errors
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data');
+  }
+
+  return res.json();
+}

@@ -1,0 +1,23 @@
+{
+  "term": 1,
+  "result": [
+    {
+      "id": 123,
+      "name": "test product a",
+      "imageUrl": "",
+      "description": "description"
+    },
+    {
+      "id": 481,
+      "name": "test product b",
+      "imageUrl": "",
+      "description": "description"
+    },
+    {
+      "id": 524,
+      "name": "test product c",
+      "imageUrl": "",
+      "description": "description"
+    }
+  ]
+}
