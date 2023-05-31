@@ -14,12 +14,14 @@ const ProductTile: React.FC = () => {
           src="/mock/img/product-img.jpg"
         />
       </div>
-      <div className={styles['title']}>
-        <Link href="/product/apple">product title</Link>
+      <div className={styles['bottom']}>
+        <div className={styles['title']}>
+          <Link href="/product/apple">product title</Link>
+        </div>
+        <div className={styles['decription']}>description</div>
+        <div className={styles['price']}>price</div>
+        <button className="button">button</button>
       </div>
-      <div className={styles['decription']}>description</div>
-      <div className={styles['price']}>price</div>
-      <button className="button">button</button>
     </div>
   );
 };
