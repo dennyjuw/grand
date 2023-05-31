@@ -9,8 +9,10 @@ const CategoryTile: React.FC = () => {
       <div className={styles['image']}>
         <Image
           alt=""
-          width={100}
-          height={100}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
           src="/mock/img/product-img.jpg"
         />
       </div>

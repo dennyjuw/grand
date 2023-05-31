@@ -9,7 +9,14 @@ const ProductTile: React.FC = (props: any) => {
   return (
     <div className={styles['product-tile']}>
       <div className={styles['image']}>
-        <Image alt="" width={240} height={240} src={imageUrl} />
+        <Image
+          alt={title}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          src={imageUrl}
+        />
       </div>
       <div className={styles['bottom']}>
         <div className={styles['title']}>
