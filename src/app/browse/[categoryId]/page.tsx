@@ -35,7 +35,8 @@ export default async function BrowseCategoryPage({
 
 async function getData(categoryId: string) {
   const res = await fetch(
-    `http://localhost:3000/mock/data/${categoryId}.json?id=${categoryId}`
+    `http://localhost:3000/mock/data/${categoryId}.json?id=${categoryId}`,
+    { next: { revalidate: Number(process.env.FETCH_CACHE_DURATION) } }
   );
 
   // Recommendation: handle errors

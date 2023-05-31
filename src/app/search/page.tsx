@@ -36,7 +36,8 @@ export default async function Search({
 
 async function getData(term: string) {
   const res = await fetch(
-    `http://localhost:3000/mock/data/search.json?term=${term}`
+    `http://localhost:3000/mock/data/search.json?term=${term}`,
+    { cache: 'no-store' }
   );
 
   // Recommendation: handle errors
