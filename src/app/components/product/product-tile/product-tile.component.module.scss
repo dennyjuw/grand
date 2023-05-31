@@ -1,2 +1,7 @@
+@import '../../../../styles/color';
+
 .product-tile {
+  border: solid $color-border 1px;
+  overflow: hidden;
+  width: 240px;
 }

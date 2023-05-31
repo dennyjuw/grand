@@ -17,7 +17,9 @@ const Header: React.FC = () => {
             priority
           />
         </Link>
-        <div className="flex-grow">search</div>
+        <div className="flex-grow">
+          <input type="text" placeholder="Search"></input>
+        </div>
         <div>
           <Link href="/register">Login or sign up</Link>
         </div>

@@ -1,13 +1,19 @@
 .footer {
+  background: #393939;
   border-top: solid #ccc 1px;
+  color: white;
   box-shadow: #eee 0px -10px 12px;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   width: 100%;
 
   .copyright {
-    background: #ccc;
+    background: #000;
     font-size: 0.875rem;
     margin: 1rem -1rem 0 -1rem;
     padding: 0.5rem 1rem;
+  }
+
+  a {
+    color: white;
   }
 }

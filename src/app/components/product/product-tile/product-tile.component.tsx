@@ -7,7 +7,12 @@ const ProductTile: React.FC = () => {
   return (
     <div className={styles['product-tile']}>
       <div className={styles['image']}>
-        <Image alt="" width={250} height={250} src="/mock/product-img.jpg" />
+        <Image
+          alt=""
+          width={240}
+          height={240}
+          src="/mock/img/product-img.jpg"
+        />
       </div>
       <div className={styles['title']}>
         <Link href="/product/apple">product title</Link>

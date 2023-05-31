@@ -10,16 +10,24 @@ const Footer: React.FC = () => {
           <h4>Customer service</h4>
           <ul>
             <li>
-              <Link href="/">Contact Us1</Link>
+              <Link href="/" className="chevron">
+                Contact Us1
+              </Link>
             </li>
             <li>
-              <Link href="/">Feedback</Link>
+              <Link href="/" className="chevron">
+                Feedback
+              </Link>
             </li>
             <li>
-              <Link href="/">link 1</Link>
+              <Link href="/" className="chevron">
+                link 1
+              </Link>
             </li>
             <li>
-              <Link href="/">link 1</Link>
+              <Link href="/" className="chevron">
+                link 1
+              </Link>
             </li>
           </ul>
         </div>
@@ -27,13 +35,19 @@ const Footer: React.FC = () => {
           <h4>Shop online</h4>
           <ul>
             <li>
-              <Link href="/">Pick up</Link>
+              <Link href="/" className="chevron">
+                Pick up
+              </Link>
             </li>
             <li>
-              <Link href="/">Delivery</Link>
+              <Link href="/" className="chevron">
+                Delivery
+              </Link>
             </li>
             <li>
-              <Link href="/">link 1</Link>
+              <Link href="/" className="chevron">
+                link 1
+              </Link>
             </li>
           </ul>
         </div>
@@ -41,16 +55,24 @@ const Footer: React.FC = () => {
           <h4>Useful links</h4>
           <ul>
             <li>
-              <Link href="/">Store locations</Link>
+              <Link href="/" className="chevron">
+                Store locations
+              </Link>
             </li>
             <li>
-              <Link href="/">Rewards</Link>
+              <Link href="/" className="chevron">
+                Rewards
+              </Link>
             </li>
             <li>
-              <Link href="/">link 1</Link>
+              <Link href="/" className="chevron">
+                link 1
+              </Link>
             </li>
             <li>
-              <Link href="/">link 1</Link>
+              <Link href="/" className="chevron">
+                link 1
+              </Link>
             </li>
           </ul>
         </div>
@@ -58,16 +80,24 @@ const Footer: React.FC = () => {
           <h4>About</h4>
           <ul>
             <li>
-              <Link href="/">About us</Link>
+              <Link href="/" className="chevron">
+                About us
+              </Link>
             </li>
             <li>
-              <Link href="/">Brands</Link>
+              <Link href="/" className="chevron">
+                Brands
+              </Link>
             </li>
             <li>
-              <Link href="/">link 1</Link>
+              <Link href="/" className="chevron">
+                link 1
+              </Link>
             </li>
             <li>
-              <Link href="/">link 1</Link>
+              <Link href="/" className="chevron">
+                link 1
+              </Link>
             </li>
           </ul>
         </div>

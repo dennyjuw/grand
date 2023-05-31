@@ -1,3 +1,22 @@
 a {
   color: green;
+
+  &.chevron {
+    display: inline-block;
+    position: relative;
+    padding-left: 1rem;
+
+    &::after {
+      border-bottom: 1px solid;
+      border-right: 1px solid;
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      transform: rotate(-45deg);
+      left: 0;
+      top: 10px;
+    }
+  }
 }
