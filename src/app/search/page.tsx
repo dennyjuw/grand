@@ -35,6 +35,9 @@ export default async function Search({
 }
 
 async function getData(term: string) {
+  // add 500ms delay - to demonstrate suspense
+  await new Promise((r) => setTimeout(r, 500));
+
   const res = await fetch(
     `http://localhost:3000/mock/data/search.json?term=${term}`,
     { cache: 'no-store' }

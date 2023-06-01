@@ -34,6 +34,9 @@ export default async function BrowseCategoryPage({
 }
 
 async function getData(categoryId: string) {
+  // add 500ms delay - to demonstrate suspense
+  await new Promise((r) => setTimeout(r, 500));
+
   const res = await fetch(
     `http://localhost:3000/mock/data/${categoryId}.json?id=${categoryId}`,
     { next: { revalidate: Number(process.env.FETCH_CACHE_DURATION) } }
