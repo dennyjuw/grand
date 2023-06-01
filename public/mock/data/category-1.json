@@ -5,10 +5,11 @@
     {
       "id": 123,
       "title": "test product a",
-      "imageUrl": "/mock/img/product-img.jpg",
+      "imageUrl": "/mock/img/1.webp",
       "description": "description",
       "price": 1.5,
-      "unit": "each"
+      "unit": "each",
+      "special": false
     },
     {
       "id": 481,
@@ -16,23 +17,26 @@
       "imageUrl": "/mock/img/product-img.jpg",
       "description": "description",
       "price": 2,
-      "unit": "each"
+      "unit": "each",
+      "special": true
     },
     {
       "id": 524,
       "title": "test product c",
-      "imageUrl": "/mock/img/product-img.jpg",
+      "imageUrl": "/mock/img/2.webp",
       "description": "description",
       "price": 2.99,
-      "unit": "each"
+      "unit": "each",
+      "special": false
     },
     {
       "id": 222,
       "title": "test product d",
-      "imageUrl": "/mock/img/product-img.jpg",
+      "imageUrl": "/mock/img/3.jpeg",
       "description": "description",
       "price": 2,
-      "unit": "each"
+      "unit": "each",
+      "special": false
     },
     {
       "id": 125,
@@ -40,23 +44,26 @@
       "imageUrl": "/mock/img/product-img.jpg",
       "description": "description",
       "price": 2.99,
-      "unit": "each"
+      "unit": "each",
+      "special": true
     },
     {
       "id": 632,
       "title": "test product f",
-      "imageUrl": "/mock/img/product-img.jpg",
+      "imageUrl": "/mock/img/4.webp",
       "description": "description",
       "price": 2,
-      "unit": "each"
+      "unit": "each",
+      "special": false
     },
     {
       "id": 801,
       "title": "test product g",
-      "imageUrl": "/mock/img/product-img.jpg",
+      "imageUrl": "/mock/img/5.jpeg",
       "description": "description",
       "price": 2.99,
-      "unit": "each"
+      "unit": "each",
+      "special": false
     }
   ]
 }

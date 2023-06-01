@@ -1,4 +1,5 @@
 import ProductImage from '@/components/product/product-image/product-image.component';
+import Link from 'next/link';
 
 export default async function ProductDetailPage({
   params,
@@ -8,7 +9,8 @@ export default async function ProductDetailPage({
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
   const data = await getData(params.id);
-  const { id, title, brand, imageUrl, description, price, unit } = data;
+  const { id, title, brand, brandId, imageUrl, description, price, unit } =
+    data;
 
   return (
     <>
@@ -17,7 +19,9 @@ export default async function ProductDetailPage({
       <div className="flex">
         <ProductImage image={imageUrl} />
         <div className="">
-          <div className="">{brand}</div>
+          <div className="">
+            Brand: <Link href={`/brand/${brandId}`}>{brand}</Link>
+          </div>
           <div className="">${price}</div>
           Panel
         </div>

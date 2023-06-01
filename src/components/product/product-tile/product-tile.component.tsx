@@ -5,12 +5,16 @@ import CartButton from '../cart-button/cart-button.component';
 import styles from './product-tile.component.module.scss';
 
 const ProductTile: React.FC = (props: any) => {
-  const { id, title, description, imageUrl, price, unit } = props;
+  const { id, title, description, imageUrl, price, unit, special } = props;
 
   return (
     <div className={styles['product-tile']}>
+      {special && (
+        <div className={`${styles['tag']} font-headline`}>Special</div>
+      )}
+
       <div className={styles['image']}>
-        <Link href={`/product/${id}`}>
+        <Link className={styles['image-link']} href={`/product/${id}`}>
           <Image
             alt={title}
             width={0}

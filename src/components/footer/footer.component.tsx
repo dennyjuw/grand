@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link href="/" className="chevron">
-                link 1
+                Return
               </Link>
             </li>
           </ul>
@@ -87,11 +87,6 @@ const Footer: React.FC = () => {
             <li>
               <Link href="/" className="chevron">
                 Brands
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="chevron">
-                link 1
               </Link>
             </li>
             <li>
