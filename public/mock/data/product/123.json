@@ -1,0 +1,14 @@
+{
+  "id": 123,
+  "title": "test product a",
+  "brand": "Michelin",
+  "imageUrl": [
+    "/mock/img/product-img.jpg",
+    "/mock/img/product-img.jpg",
+    "/mock/img/product-img.jpg",
+    "/mock/img/product-img.jpg"
+  ],
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in semper tellus. Praesent in posuere purus. Cras ut diam ac justo dictum tempus. Praesent eget bibendum sapien. Nullam eget felis scelerisque, efficitur ipsum at, feugiat massa. Phasellus id quam gravida, commodo mi sed, suscipit eros. Curabitur sem magna, malesuada sit amet interdum at, iaculis id diam. Duis placerat euismod vulputate. Mauris a lorem risus. Sed ornare consectetur turpis, nec porta velit elementum sit amet. Nullam venenatis quam turpis, eu lobortis ante ullamcorper quis. Aliquam laoreet diam quis accumsan accumsan. Suspendisse volutpat sit amet ipsum et dictum.",
+  "price": 1.5,
+  "unit": "each"
+}
