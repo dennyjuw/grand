@@ -1,7 +1,9 @@
 @import '../../../styles/colors';
 
 .product-tile {
-  border: solid $color-border 1px;
+  border-radius: 0.25rem;
+  box-shadow: $color-border 1px 1px 6px;
+
   overflow: hidden;
   width: 240px;
 
