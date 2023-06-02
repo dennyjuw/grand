@@ -3,11 +3,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import styles from './header.component.module.scss';
 
-const Header: React.FC = () => {
+const Header: React.FC<any> = () => {
   const { push } = useRouter();
+  const pathname = usePathname();
 
   const handleSearch = (e: any) => {
     e.preventDefault();
@@ -38,16 +39,30 @@ const Header: React.FC = () => {
       </div>
       <nav>
         <ul className="flex flex-row">
-          <li>
+          <li
+            className={pathname === '/browse/specials' ? styles['active'] : ''}
+          >
             <Link href="/browse/specials">Specials</Link>
           </li>
-          <li>
+          <li
+            className={
+              pathname === '/browse/category-1' ? styles['active'] : ''
+            }
+          >
             <Link href="/browse/category-1">Category 1</Link>
           </li>
-          <li>
+          <li
+            className={
+              pathname === '/browse/category-2' ? styles['active'] : ''
+            }
+          >
             <Link href="/browse/category-2">Category 2</Link>
           </li>
-          <li>
+          <li
+            className={
+              pathname === '/browse/category-3' ? styles['active'] : ''
+            }
+          >
             <Link href="/browse/category-3">Category 3</Link>
           </li>
         </ul>
