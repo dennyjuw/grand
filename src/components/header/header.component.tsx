@@ -1,9 +1,10 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
+import Drawer from '../drawer/drawer.component';
 import styles from './header.component.module.scss';
 
 const Header: React.FC<any> = () => {
@@ -14,6 +15,13 @@ const Header: React.FC<any> = () => {
     e.preventDefault();
     const searchTerm = e.target.searchTerm.value;
     push(`search?term=${searchTerm}`);
+  };
+
+  const [browseOpen, setBrowseOpen] = useState(false);
+
+  const toggleBrowse = (e: any) => {
+    e.preventDefault();
+    setBrowseOpen(!browseOpen);
   };
 
   return (
@@ -39,6 +47,11 @@ const Header: React.FC<any> = () => {
       </div>
       <nav>
         <ul className="flex flex-row">
+          <li>
+            <Link href="/browse" onClick={toggleBrowse}>
+              Browse
+            </Link>
+          </li>
           <li
             className={pathname === '/browse/specials' ? styles['active'] : ''}
           >
@@ -67,6 +80,36 @@ const Header: React.FC<any> = () => {
           </li>
         </ul>
       </nav>
+      <Drawer
+        title="Browse"
+        position="left"
+        open={browseOpen}
+        onClose={toggleBrowse}
+      >
+        <ul>
+          <li
+            className={
+              pathname === '/browse/category-1' ? styles['active'] : ''
+            }
+          >
+            <Link href="/browse/category-1">Category 1</Link>
+          </li>
+          <li
+            className={
+              pathname === '/browse/category-2' ? styles['active'] : ''
+            }
+          >
+            <Link href="/browse/category-2">Category 2</Link>
+          </li>
+          <li
+            className={
+              pathname === '/browse/category-3' ? styles['active'] : ''
+            }
+          >
+            <Link href="/browse/category-3">Category 3</Link>
+          </li>
+        </ul>
+      </Drawer>
     </header>
   );
 };
