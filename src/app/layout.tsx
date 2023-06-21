@@ -1,4 +1,5 @@
 import React from 'react';
+import { Providers } from '../store/provider';
 import '@/styles/index.scss';
 import Header from '@/components/header/header.component';
 import Footer from '@/components/footer/footer.component';
@@ -19,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main>
-          <div className="layout-main">{children}</div>
-        </main>
-        <Footer />
+        <Providers>
+          <Header />
+          <main>
+            <div className="layout-main">{children}</div>
+          </main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
